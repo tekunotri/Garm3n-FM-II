@@ -1,5 +1,5 @@
 "Resource/UI/HudMedicCharge.res"
-{	
+{
 	"Background"
 	{
 		"ControlName"	"CTFImagePanel"
@@ -12,9 +12,9 @@
 		"visible"		"0"
 		"enabled"		"0"
 		"image"			"../hud/medic_charge_blue_bg"
-		"scaleImage"	"1"	
+		"scaleImage"	"1"
 		"teambg_2"		"../hud/medic_charge_red_bg"
-		"teambg_3"		"../hud/medic_charge_blue_bg"				
+		"teambg_3"		"../hud/medic_charge_blue_bg"
 	}
 
 	"ChargeLabel"
@@ -102,7 +102,7 @@
 		"teambg_3_lodef"	"../hud/color_panel_blu"
 		"src_corner_height"		"23"				// pixels inside the image
 		"src_corner_width"		"23"
-			
+
 		"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
 		"draw_corner_height" 	"0"
 	}
@@ -125,7 +125,7 @@
 	}
 
 	"ChargeMeter"
-	{	
+	{
 		"ControlName"	"ContinuousProgressBar"
 		"fieldName"		"ChargeMeter"
 		"font"			"Default"
@@ -146,7 +146,7 @@
 	}
 
 	"ChargeMeter1"
-	{	
+	{
 		"ControlName"	"ContinuousProgressBar"
 		"fieldName"		"ChargeMeter1"
 		"font"			"Default"
@@ -154,7 +154,7 @@
 		"ypos"			"226"
 		"zpos"			"2"
 		"wide"			"20"
-		"tall"			"24"				
+		"tall"			"24"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -167,15 +167,15 @@
 	}
 
 	"ChargeMeter2"
-	{	
+	{
 		"ControlName"	"ContinuousProgressBar"
 		"fieldName"		"ChargeMeter2"
 		"font"			"Default"
-		"xpos"			"213"
+		"xpos"			"211"
 		"ypos"			"226"
 		"zpos"			"2"
 		"wide"			"20"
-		"tall"			"24"				
+		"tall"			"24"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -188,15 +188,15 @@
 	}
 
 	"ChargeMeter3"
-	{	
+	{
 		"ControlName"	"ContinuousProgressBar"
 		"fieldName"		"ChargeMeter3"
 		"font"			"Default"
-		"xpos"			"239"
+		"xpos"			"241"
 		"ypos"			"226"
 		"zpos"			"2"
 		"wide"			"20"
-		"tall"			"24"				
+		"tall"			"24"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -209,7 +209,7 @@
 	}
 
 	"ChargeMeter4"
-	{	
+	{
 		"ControlName"	"ContinuousProgressBar"
 		"fieldName"		"ChargeMeter4"
 		"font"			"Default"
@@ -217,7 +217,7 @@
 		"ypos"			"226"
 		"zpos"			"2"
 		"wide"			"20"
-		"tall"			"24"				
+		"tall"			"24"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -240,6 +240,6 @@
 		"visible"		"0"
 		"enabled"		"0"
 		"image"			"../HUD/defense_buff_bullet_blue"
-		"scaleImage"	"0"	
-	}		
+		"scaleImage"	"0"
+	}
 }

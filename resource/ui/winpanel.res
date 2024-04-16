@@ -1,4 +1,4 @@
-"Resource/UI/winpanel.res"
+"Resource/UI/winpanel.res" // this shit does not work for some reason!!!
 {
 	"TeamScoresPanel"
 	{
@@ -12,8 +12,26 @@
 
 		"BlueScoreBG"
 		{
-			"ControlName"		"ImagePanel"
+			"ControlName"	"EditablePanel"
 			"fieldName"		"BlueScoreBG"
+			"wide"			"0"
+			"tall"			"0"
+			"visible"		"0"
+			"enabled"		"0"
+		}
+		"RedScoreBG"
+		{
+			"ControlName"	"EditablePanel"
+			"fieldName"		"RedScoreBG"
+			"wide"			"0"
+			"tall"			"0"
+			"visible"		"0"
+			"enabled"		"0"
+		}
+		"BlueScoreBG2"
+		{
+			"ControlName"		"ImagePanel"
+			"fieldName"		"BlueScoreBG2"
 			"xpos"			"66"
 			"ypos"			"43"
 			"wide"			"161"
@@ -26,10 +44,10 @@
 			"image_lodef"	"../hud/winpanel_blue_bg_team_lodef"
 			"scaleImage"		"1"
 		}
-		"RedScoreBG"
+		"RedScoreBG2"
 		{
 			"ControlName"		"ImagePanel"
-			"fieldName"		"RedScoreBG"
+			"fieldName"		"RedScoreBG2"
 			"xpos"			"161"
 			"ypos"			"43"
 			"wide"			"161"
@@ -74,7 +92,7 @@
 			"tall"			"33"
 			"font"			"FlagIcon"
 			"labelText"		"B"
-			"textAlignment"	"center"	
+			"textAlignment"	"center"
 			"fgcolor"		"101 121 140 255"
 		}
 		"BlueTeamScore"
@@ -125,7 +143,7 @@
 			"tall"			"34"
 			"font"			"FlagIcon"
 			"labelText"		"B"
-			"textAlignment"	"center"	
+			"textAlignment"	"center"
 			"fgcolor"		"162 61 60 255"
 		}
 		"RedTeamScore"
@@ -143,7 +161,7 @@
 			"fgcolor"		"Garm3nWhite"
 			"visible"		"1"
 			"enabled"		"1"
-		}							
+		}
 
 	}
 	"WinPanelBG"
@@ -157,10 +175,19 @@
 		"tall"			"105"
 		"visible"		"0"
 		"enabled"		"1"
-		"scaleImage"		"0"	
+		"scaleImage"		"0"
+	}
+	"WinPanelBGBorder"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"WinPanelBGBorder"
+		"wide"			"0"
+		"tall"			"0"
+		"visible"		"0"
+		"enabled"		"0"
 	}
 	"WinningTeamLabel"
-	{	
+	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"WinningTeamLabel"
 		"font"			"ChatFont"
@@ -178,7 +205,7 @@
 		"brighttext"		"0"
 	}
 	"AdvancingTeamLabel"
-	{	
+	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"AdvancingTeamLabel"
 		"font"			"ChatFont"
@@ -196,7 +223,7 @@
 		"brighttext"		"0"
 	}
 	"WinReasonLabel"
-	{	
+	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"WinReasonLabel"
 		"font"			"ScoreboardVerySmall"
@@ -216,7 +243,7 @@
 		"brighttext"		"0"
 	}
 	"DetailsLabel"
-	{	
+	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"DetailsLabel"
 		"font"			"ScoreboardVerySmall"
@@ -248,13 +275,13 @@
 		"pinCorner"		"0"
 		"visible"		"0"
 		"enabled"		"1"
-		"tabPosition"	"0"	
+		"tabPosition"	"0"
 		"fillcolor"		"0 0 0 150"
 		"fillcolor_lodef"		"0 0 0 200"
 		"PaintBackgroundType"	"0"
 	}
 	"TopPlayersLabel"
-	{	
+	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"TopPlayerLabel"
 		"font"			"ScoreboardVerySmall"
@@ -273,7 +300,7 @@
 		"brighttext"		"0"
 	}
 	"PointsThisRoundLabel"
-	{	
+	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"PointsThisRoundLabel"
 		"font"			"ScoreboardVerySmall"
@@ -304,11 +331,11 @@
 		"pinCorner"		"0"
 		"visible"		"0"
 		"enabled"		"1"
-		"tabPosition"	"0"	
+		"tabPosition"	"0"
 		"fillcolor"		"Garm3nHUDWhite"
 		"PaintBackgroundType"	"0"
 	}
-	"Player1Avatar"		
+	"Player1Avatar"
 	{
 		"ControlName"		"CAvatarImagePanel"
 		"fieldName"		"Player1Avatar"
@@ -320,7 +347,7 @@
 		"visible"		"0"
 		"enabled"		"1"
 		"image"			""
-		"scaleImage"		"1"	
+		"scaleImage"		"1"
 		"color_outline"		"52 48 45 255"
 	}
 	"Player1Icon"
@@ -336,17 +363,17 @@
 		"tall"			"35"
 		"font"			"PlayerIcon"
 		"labelText"		"A"
-		"textAlignment"	"center"	
+		"textAlignment"	"center"
 		"fgcolor"		"255 175 0 255"
 	}
 	"Player1Name"
-	{	
+	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"Player1Name"
-		"xpos"			"33"	
+		"xpos"			"33"
 		"ypos"			"143"
 		"zpos"			"3"
-		"wide"			"120"	
+		"wide"			"120"
 		"tall"			"20"
 		"autoResize"		"0"
 		"pinCorner"		"0"
@@ -359,7 +386,7 @@
 		"brighttext"		"0"
 	}
 	"Player1Class"
-	{	
+	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"Player1Class"
 		"xpos"			"180"
@@ -377,7 +404,7 @@
 		"brighttext"		"0"
 	}
 	"Player1Score"
-	{	
+	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"Player1Score"
 		"xpos"			"140"
@@ -395,7 +422,7 @@
 		"dulltext"		"0"
 		"brighttext"		"0"
 	}
-	"Player2Avatar"		
+	"Player2Avatar"
 	{
 		"ControlName"		"CAvatarImagePanel"
 		"fieldName"		"Player2Avatar"
@@ -407,7 +434,7 @@
 		"visible"		"0"
 		"enabled"		"1"
 		"image"			""
-		"scaleImage"		"1"	
+		"scaleImage"		"1"
 		"color_outline"		"52 48 45 255"
 	}
 	"Player2Icon"
@@ -423,17 +450,17 @@
 		"tall"			"34"
 		"font"			"PlayerIcon"
 		"labelText"		"A"
-		"textAlignment"	"center"	
+		"textAlignment"	"center"
 		"fgcolor"		"185 185 185 255"
 	}
 	"Player2Name"
-	{	
+	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"Player2Name"
-		"xpos"			"33"	
+		"xpos"			"33"
 		"ypos"			"160"
 		"zpos"			"3"
-		"wide"			"120"	
+		"wide"			"120"
 		"tall"			"20"
 		"autoResize"		"0"
 		"pinCorner"		"0"
@@ -446,7 +473,7 @@
 		"brighttext"		"0"
 	}
 	"Player2Class"
-	{	
+	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"Player2Class"
 		"xpos"			"180"
@@ -464,7 +491,7 @@
 		"brighttext"		"0"
 	}
 	"Player2Score"
-	{	
+	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"Player2Score"
 		"xpos"			"140"
@@ -482,7 +509,7 @@
 		"dulltext"		"0"
 		"brighttext"		"0"
 	}
-	"Player3Avatar"		
+	"Player3Avatar"
 	{
 		"ControlName"		"CAvatarImagePanel"
 		"fieldName"		"Player3Avatar"
@@ -494,7 +521,7 @@
 		"visible"		"0"
 		"enabled"		"1"
 		"image"			""
-		"scaleImage"		"1"	
+		"scaleImage"		"1"
 		"color_outline"		"52 48 45 255"
 	}
 	"Player3Icon"
@@ -510,17 +537,17 @@
 		"tall"			"34"
 		"font"			"PlayerIcon"
 		"labelText"		"A"
-		"textAlignment"	"center"	
+		"textAlignment"	"center"
 		"fgcolor"		"180 75 0 255"
 	}
 	"Player3Name"
-	{	
+	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"Player3Name"
-		"xpos"			"33"	
+		"xpos"			"33"
 		"ypos"			"178"
 		"zpos"			"3"
-		"wide"			"120"	
+		"wide"			"120"
 		"tall"			"20"
 		"autoResize"		"0"
 		"pinCorner"		"0"
@@ -533,7 +560,7 @@
 		"brighttext"		"0"
 	}
 	"Player3Class"
-	{	
+	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"Player3Class"
 		"xpos"			"180"
@@ -551,7 +578,7 @@
 		"brighttext"		"0"
 	}
 	"Player3Score"
-	{	
+	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"Player3Score"
 		"xpos"			"140"

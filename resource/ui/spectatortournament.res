@@ -1,3 +1,4 @@
+#base "itempanel.res"
 "Resource/UI/SpectatorTournament.res"
 {
 	"specgui"
@@ -9,17 +10,17 @@
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"enabled"		"1"
-		
+
 		"team1_player_base_offset_x"		"-265"
 		"team1_player_base_y"				"471"
 		"team1_player_delta_x"				"0"
 		"team1_player_delta_y"				"-9"
-		
+
 		"team2_player_base_offset_x"		"135"
 		"team2_player_base_y"				"471"
 		"team2_player_delta_x"				"0"
 		"team2_player_delta_y"				"-9"
-		
+
 		"playerpanels_kv"
 		{
 			"visible"		"0"
@@ -63,7 +64,7 @@
 				"visible"			"1"
 				"enabled"			"1"
 			}
-			
+
 			"playername"
 			{
 				"ControlName"	"CExLabel"
@@ -99,14 +100,14 @@
 				"visible"		"1"
 				"enabled"		"1"
 				"image"			"../hud/class_scoutred"
-				"scaleImage"	"1"	
+				"scaleImage"	"1"
 
 				if_mvm
 				{
 					"visible"		"1"
 				}
 			}
-			
+
 			"classimagebg"
 			{
 				"ControlName"		"Panel"
@@ -120,13 +121,13 @@
 				"enabled"		"1"
 				"bgcolor_override"		"Black"
 				"PaintBackgroundType"	"0"
-				
+
 				if_mvm
 				{
 					"visible"		"0"
 				}
 			}
-			
+
 			"HealthIcon"
 			{
 				"ControlName"		"EditablePanel"
@@ -137,7 +138,7 @@
 				"wide"				"160"
 				"tall"				"20"
 				"visible"			"1"
-				"enabled"			"1"	
+				"enabled"			"1"
 				"HealthBonusPosAdj"	"10"
 				"HealthDeathWarning"		"0.49"
 				"TFFont"					"HudFontSmallest"
@@ -162,16 +163,16 @@
 
 				"src_corner_height"	"22"				// pixels inside the image
 				"src_corner_width"	"22"
-			
+
 				"draw_corner_width"	"3"				// screen size of the corners ( and sides ), proportional
 				"draw_corner_height" 	"3"
-				
+
 				if_mvm
 				{
 					"visible"		"0"
-				}	
+				}
 			}
-			
+
 			"ReadyImage"
 			{
 				"ControlName"		"ImagePanel"
@@ -191,9 +192,9 @@
 				if_mvm
 				{
 					"visible"		"0"
-				}	
+				}
 			}
-			
+
 			"respawntime"
 			{
 				"ControlName"	"CExLabel"
@@ -256,11 +257,11 @@
 				"visible"		"0"
 			}
 		}
-		
+
 		if_mvm
 		{
 			"visible"		"0"
-		}		
+		}
 	}
 
 	"topbar"
@@ -326,7 +327,7 @@
 		"font"			"ChatFont"
 		"wrap"			"1"
 		"centerwrap"	"1"
-	
+
 		if_mvm
 		{
 			"visible"		"1"
@@ -349,7 +350,7 @@
 		"ControlName"		"CExLabel"
 		"fieldName"		"SwitchCamModeKeyLabel"
 		"visible"		"0"
-		
+
 	}
 	"SwitchCamModeLabel"
 	{
@@ -387,78 +388,5 @@
 		"fieldName"		"TipLabel"
 		"visible"		"0"
 	}
-	"itempanel"
-	{
-		"ControlName"	"CItemModelPanel"
-		"fieldName"		"itempanel"
-		"xpos"			"r1270"
-		"ypos"			"300"
-		"zpos"			"1"
-		"wide"			"0"
-		"tall"			"0"
-		"visible"		"0"
-		"bgcolor_override"		"255 255 255 0"
-		"PaintBackgroundType"	"0"
-		
-		"model_xpos"		"10"
-		"model_center_y"	"1"
-		"model_wide"		"90"
-		"model_tall"		"55"
-		
-		"text_xpos"		"90"
-		"text_wide"		"170"
-		"text_center"	"1"
-		
-		"max_text_height"	"90"
-		"padding_height"	"40"
-		"resize_to_text"	"1"
-		"text_forcesize"	"2"
-		
-		"itemmodelpanel"
-		{
-			"fieldName"		"itemmodelpanel"
-			"use_item_rendertarget" "1"
-			"useparentbg"		"1"
-		}
-		
-		"ItemLabel"
-		{	
-			"ControlName"	"Label"
-			"fieldName"		"ItemLabel"
-			"font"			"DefaultSmall"
-			"xpos"			"10"
-			"ypos"			"3"
-			"zpos"			"1"
-			"wide"			"270"
-			"tall"			"9"
-			"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-			"labelText"		"#FreezePanel_Item"
-			"textAlignment"	"Left"
-			"dulltext"		"0"
-			"brighttext"	"0"
-		}
-		
-		"attriblabel"
-		{
-			"ControlName"	"CExLabel"
-			"fieldName"		"attriblabel"
-			"font"			"ItemFontAttribLarge"
-			"xpos"			"0"
-			"ypos"			"30"
-			"zpos"			"2"
-			"wide"			"140"
-			"tall"			"60"
-			"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-			"labelText"		"%attriblist%"
-			"textAlignment"	"south"
-			"fgcolor"		"235 226 202 255"
-			"centerwrap"	"1"
-		}
-	}	
+
 }

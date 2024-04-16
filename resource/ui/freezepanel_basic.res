@@ -12,30 +12,30 @@
 		"visible"		"0"
 		"bgcolor_override"		"255 255 255 0"
 		"PaintBackgroundType"	"0"
-		
+
 		"model_xpos"		"10"
 		"model_center_y"	"1"
 		"model_wide"		"90"
 		"model_tall"		"55"
-		
+
 		"text_xpos"		"90"
 		"text_wide"		"170"
 		"text_center"	"1"
-		
+
 		"max_text_height"	"90"
 		"padding_height"	"40"
 		"resize_to_text"	"1"
 		"text_forcesize"	"2"
-		
+
 		"itemmodelpanel"
 		{
 			"fieldName"		"itemmodelpanel"
 			"use_item_rendertarget" "1"
 			"useparentbg"		"1"
 		}
-		
+
 		"ItemLabel"
-		{	
+		{
 			"ControlName"	"Label"
 			"fieldName"		"ItemLabel"
 			"font"			"DefaultSmall"
@@ -53,7 +53,7 @@
 			"dulltext"		"0"
 			"brighttext"	"0"
 		}
-		
+
 		"attriblabel"
 		{
 			"ControlName"	"CExLabel"
@@ -67,24 +67,24 @@
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"0"
-			"enabled"		"1"
+			"enabled"		"0"
 			"labelText"		"%attriblist%"
 			"textAlignment"	"south"
 			"fgcolor"		"235 226 202 255"
 			"centerwrap"	"1"
 		}
 	}
-	"FreezePanelBase"	
+	"FreezePanelBase"
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"FreezePanelBase"
 		"xpos"			"c-108"
-		"ypos"			"r300"		
-		"wide"			"250"		
-		"tall"			"100"		
+		"ypos"			"r300"
+		"wide"			"250"
+		"tall"			"100"
 		"visible"		"1"
 		"ForceStereoRenderToFrameBuffer" "1"
-	
+
 		"FreezePanelBG"
 		{
 			"ControlName"		"CTFImagePanel"
@@ -104,17 +104,17 @@
 			"teambg_2"		"../hud/color_panel_brown"
 			"teambg_2_lodef"		"../hud/color_panel_brown"
 			"teambg_3"			"../hud/color_panel_brown"
-			"teambg_3_lodef"		"../hud/color_panel_brown"	
-			
+			"teambg_3_lodef"		"../hud/color_panel_brown"
+
 			"src_corner_height"		"23"				// pixels inside the image
 			"src_corner_width"		"23"
-				
+
 			"draw_corner_width"		"5"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"5"	
+			"draw_corner_height" 	"5"
 		}
-		
+
 		"FreezeLabel"
-		{	
+		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"FreezeLabel"
 			"font"			"ChatMiniFont"
@@ -133,8 +133,8 @@
 			"dulltext"		"0"
 			"brighttext"		"0"
 		}
-		
-		"FreezePanelHealth"		
+
+		"FreezePanelHealth"
 		{
 			"ControlName"	"CTFFreezePanelHealth"
 			"fieldName"		"FreezePanelHealth"
@@ -144,7 +144,7 @@
 			"wide"			"100"
 			"tall"			"35"
 			"visible"		"1"
-			"enabled"		"1"	
+			"enabled"		"1"
 			"HealthBonusPosAdj"	"9"
 			"HealthDeathWarning"	"0.49"
 			"TFFont"		"HudFontSmall"
@@ -168,10 +168,10 @@
 			"visible"			"1"
 			"enabled"			"1"
 		}
-	
+
 
 		"FreezeLabelKiller"
-		{	
+		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"FreezeLabelKiller"
 			"font"			"Garm3n13Spec"
@@ -201,10 +201,10 @@
 			"visible"		"0"
 			"enabled"		"0"
 			"image"			""
-			"scaleImage"		"1"	
+			"scaleImage"		"1"
 			"color_outline"		"52 48 45 255"
-		}	
-		
+		}
+
 		"NemesisSubPanel"
 		{
 			"ControlName"		"EditablePanel"
@@ -228,13 +228,13 @@
 				"visible"		"0"
 				"enabled"		"1"
 				"image"			"../hud/color_panel_brown"
-				"scaleImage"		"1"	
-				
+				"scaleImage"		"1"
+
 				"src_corner_height"		"23"				// pixels inside the image
 				"src_corner_width"		"23"
-					
+
 				"draw_corner_width"		"6"				// screen size of the corners ( and sides ), proportional
-				"draw_corner_height" 	"6"	
+				"draw_corner_height" 	"6"
 			}
 			"NemesisIcon"
 			{
@@ -248,10 +248,10 @@
 				"visible"		"0"
 				"enabled"		"1"
 				"image"			"../hud/leaderboard_nemesis_freezecam"
-				"scaleImage"	"1"	
-			}		
+				"scaleImage"	"1"
+			}
 			"NemesisLabel"
-			{	
+			{
 				"ControlName"		"CExLabel"
 				"fieldName"		"NemesisLabel"
 				"font"			"Garm3nFontTargetSmaller"
@@ -269,7 +269,7 @@
 				"textAlignment"		"center"
 			}
 			"NemesisLabel2"
-			{	
+			{
 				"ControlName"		"Label"
 				"fieldName"		"NemesisLabel2"
 				"font"			"DefaultSmall"
@@ -287,7 +287,7 @@
 			}
 		}
 	}
-		
+
 	"ScreenshotPanel"
 	{
 		"ControlName"	"EditablePanel"
@@ -298,7 +298,7 @@
 		"wide"			"166"
 		"tall"			"40"
 		"visible"		"0"
-			
+
 		"ScreenshotPanelBG"
 		{
 			"ControlName"		"ImagePanel"
@@ -325,10 +325,10 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"image"			"../hud/ico_camera"
-			"scaleImage"	"1"	
-		}		
+			"scaleImage"	"1"
+		}
 		"ScreenshotLabel"
-		{	
+		{
 			"ControlName"		"Label"
 			"fieldName"		"ScreenshotLabel"
 			"font"			"SpectatorKeyHints"
@@ -346,5 +346,5 @@
 			"dulltext"		"0"
 			"brighttext"		"0"
 		}
-	}	
+	}
 }
