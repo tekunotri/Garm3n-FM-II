@@ -60,7 +60,7 @@
 		"font"			"Garm3n16"
 		"fgcolor"		"255 255 255 255"
 	}
-	
+
 	"MapInfoType"
 	{
 		"ControlName"	"CExLabel"
@@ -98,8 +98,8 @@
 		"textAlignment"	"center"
 		"fgcolor"		"255 255 255 255"
 	}
-	
-	"MapInfoContinue" 
+
+	"MapInfoContinue"
 	{
 		"ControlName"	"CTFButton"
 		"fieldName"		"MapInfoContinue"
@@ -112,7 +112,7 @@
 		"pinCorner"		"2"
 		"visible"		"1"
 		"enabled"		"1"
-		"labelText"		"#TF_Continue"
+		"labelText"		"(&E) CONTINUE"
 		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"
@@ -127,8 +127,30 @@
 		"armedFgColor_override" "20 22 24 255"
 		"depressedFgColor_override" "255 255 255 255"
 	}
-	
-	"MapInfoWatchIntro" 
+
+	"next" //dumbass hackjob to make this shit button work with keybind
+	{
+		"ControlName"	"CExButton"
+		"fieldName"		"next"
+		"xpos"			"9999"
+		"ypos"			"r40"
+		"zpos"			"6"
+		"wide"			"150"
+		"tall"			"30"
+		"autoResize"	"0"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"&e"
+		"textAlignment"	"center"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"command"		"continue"
+		"default"		"1"
+		"font"			"MenuSmallFont"
+		"fgcolor"		"Blank"
+	}
+	"MapInfoWatchIntro"
 	{
 		"ControlName"	"CTFButton"
 		"fieldName"		"MapInfoWatchIntro"
@@ -157,7 +179,7 @@
 		"depressedFgColor_override" "255 255 255 255"
 	}
 
-	"MapInfoBack" 
+	"MapInfoBack"
 	{
 		"ControlName"	"CTFButton"
 		"fieldName"		"MapInfoBack"
@@ -183,5 +205,5 @@
 		"defaultFgColor_override" "Blank"
 		"armedFgColor_override" "Blank"
 		"depressedFgColor_override" "Blank"
-	}	
+	}
 }

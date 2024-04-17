@@ -330,24 +330,24 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"FriendsContainer"
-		"xpos"			"r117"
-		"ypos"			"90"
+		"xpos"			"r148"
+		"ypos"			"110"
 		"zpos"			"11"
-		"wide"			"130"
+		"wide"			"150"
 		"tall"			"300"
 		"visible"		"1"
 
-		"bgcolor_override"		"0 0 0 0"
+		"bgcolor_override"		"152 49 50 255"
 
 		"TitleLabel"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"TitleLabel"
-			"font"			"HudFontMediumSmallBold"
+			"font"			"Garm3n16"
 			"labelText"		"#TF_Competitive_Friends"
 			"textAlignment"	"west"
-			"xpos"			"5"
-			"ypos"			"5"
+			"xpos"			"10"
+			"ypos"			"0"
 			"wide"			"f0"
 			"tall"			"30"
 			"autoResize"	"0"
@@ -362,18 +362,29 @@
 		{
 			"ControlName"	"EditablePanel"
 			"fieldname"		"InnerShadow"
-			"xpos"			"9999"
+			"xpos"			"cs-0.5"
+			"ypos"			"rs1-10"
+			"zpos"			"501"
+			"wide"			"f20"
+			"tall"			"110"
+			"visible"		"0"
+			"PaintBackgroundType"	"0"
+			"proportionaltoparent"	"1"
+			"mouseinputenabled"	"0"
+
+			"paintborder"	"1"
+			"border"		"InnerShadowBorder"
 		}
 
 		"SteamFriendsList"
 		{
 			"ControlName"	"CSteamFriendsListPanel"
 			"fieldname"		"SteamFriendsList"
-			"xpos"			"0"
-			"ypos"			"30"
+			"xpos"			"cs-0.5"
+			"ypos"			"rs1-10"
 			"zpos"			"500"
-			"wide"			"130"
-			"tall"			"265"
+			"wide"			"f20"
+			"tall"			"260"
 			"visible"		"1"
 			"proportionaltoparent"	"1"
 
@@ -394,10 +405,10 @@
 			{
 				"ControlName"	"ScrollBar"
 				"FieldName"		"ScrollBar"
-				"xpos"			"115"
+				"xpos"			"rs1+1"
 				"ypos"			"0"
 				"tall"			"f0"
-				"wide"			"3"
+				"wide"			"3" // This gets slammed from client schme.  GG.
 				"zpos"			"1000"
 				"nobuttons"		"1"
 				"proportionaltoparent"	"1"
@@ -427,17 +438,17 @@
 		{
 			"ControlName"	"EditablePanel"
 			"fieldname"		"BelowDarken"
-			"xpos"			"5"
-			"ypos"			"30"
+			"xpos"			"cs-.5"
+			"ypos"			"rs1-10"
 			"zpos"			"499"
-			"wide"			"112"
-			"tall"			"280"
+			"wide"			"f20"
+			"tall"			"260"
 			"visible"		"1"
 			"PaintBackgroundType"	"0"
 			"proportionaltoparent"	"1"
 			"mouseinputenabled"	"0"
 
-			"bgcolor_override"	"0 0 0 100"
+			"bgcolor_override"	"0 0 0 175"
 		}
 	}
 
